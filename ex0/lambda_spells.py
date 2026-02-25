@@ -60,9 +60,6 @@ def main():
     spell_names = spell_transformer(spells)
     print(spell_names)
 
-    stats = mage_stats(mages)
-    print(stats)
-
 
 if __name__ == "__main__":
     main()
