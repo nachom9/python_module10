@@ -42,13 +42,6 @@ def main():
         {'name': 'Water Chalice', 'power': 92, 'type': 'accessory'},
         {'name': 'Fire Staff', 'power': 66, 'type': 'weapon'}
         ]
-    mages = [
-        {'name': 'Morgan', 'power': 92, 'element': 'light'},
-        {'name': 'Rowan', 'power': 63, 'element': 'ice'},
-        {'name': 'Phoenix', 'power': 76, 'element': 'ice'},
-        {'name': 'Rowan', 'power': 66, 'element': 'water'},
-        {'name': 'Kai', 'power': 57, 'element': 'lightning'}
-        ]
     spells = ['heal', 'meteor', 'flash', 'earthquake']
 
     print("\nTesting artifact sorter...")
