@@ -42,7 +42,7 @@ def spell_sequence(spells: list[callable]) -> callable:
     return lambda target: list(spell(target) for spell in spells)
 
 
-def main():
+def main() -> None:
     print("\nTesting spell combiner...")
     combined = spell_combiner(fireball, heal)
     comb_res = combined("Dragon")

@@ -38,7 +38,7 @@ def memory_vault() -> dict[str, callable]:
     return {"store": store, "recall": recall}
 
 
-def main():
+def main() -> None:
     print("\nTesting mage counter...")
     count_calls = mage_counter()
     for i in range(3):

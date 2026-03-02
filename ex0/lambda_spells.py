@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 
 
-def check_power(mage_power: int, min_power: int):
-    if mage_power >= min_power:
-        return True
-    else:
-        return False
+def check_power(mage_power: int, min_power: int) -> bool:
+    return mage_power >= min_power
 
 
 def artifact_sorter(artifacts: list[dict]) -> list[dict]:
@@ -34,13 +31,20 @@ def mage_stats(mages: list[dict]) -> dict:
     return stats
 
 
-def main():
+def main() -> None:
 
     artifacts = [
         {'name': 'Water Chalice', 'power': 72, 'type': 'weapon'},
         {'name': 'Earth Shield', 'power': 63, 'type': 'weapon'},
         {'name': 'Water Chalice', 'power': 92, 'type': 'accessory'},
         {'name': 'Fire Staff', 'power': 66, 'type': 'weapon'}
+        ]
+    mages = [
+        {'name': 'Morgan', 'power': 92, 'element': 'light'},
+        {'name': 'Rowan', 'power': 63, 'element': 'ice'},
+        {'name': 'Phoenix', 'power': 76, 'element': 'ice'},
+        {'name': 'Rowan', 'power': 66, 'element': 'water'},
+        {'name': 'Kai', 'power': 57, 'element': 'lightning'}
         ]
     spells = ['heal', 'meteor', 'flash', 'earthquake']
 
@@ -52,6 +56,9 @@ def main():
     print("\nTesting spell transformer...")
     spell_names = spell_transformer(spells)
     print(spell_names)
+
+    print("\nTesting mages' stats...")
+    print(mage_stats(mages))
 
 
 if __name__ == "__main__":
